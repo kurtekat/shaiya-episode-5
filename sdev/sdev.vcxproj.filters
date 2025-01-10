@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\shaiya">
+      <UniqueIdentifier>{7e3f2a7d-986f-466a-96d2-9951d8e5e04b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include">
+      <UniqueIdentifier>{11aee606-69f8-461a-bd3f-b0f6c54e40c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\src">
+      <UniqueIdentifier>{38f006ba-69d0-4fd2-a81d-a241176b24d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="include\shaiya\include\network">
+      <UniqueIdentifier>{290aa20e-eff7-4f5e-9c08-8b83915dcf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\dbAgent">
+      <UniqueIdentifier>{8e61052d-5794-4f04-b232-d48c872a50e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\game">
+      <UniqueIdentifier>{306a10ac-c505-47ff-9dbe-94bc4273ca3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\dbAgent\incoming">
+      <UniqueIdentifier>{6d2fa7dc-3e2d-46f0-aa33-887834c9f22b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\dbAgent\outgoing">
+      <UniqueIdentifier>{9e4f6155-f62c-42b2-b773-07a65016e773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\game\incoming">
+      <UniqueIdentifier>{035ee9c9-a7be-4ceb-8cd6-3d7a12df2b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\shaiya\include\network\game\outgoing">
+      <UniqueIdentifier>{0f260598-48be-4f05-9597-f7ea07422303}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\packet_shop.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="include\shaiya\src\SConnection.cpp">
+      <Filter>include\shaiya\src</Filter>
+    </ClCompile>
+    <ClCompile Include="include\shaiya\src\SConnectionTBaseReconnect.cpp">
+      <Filter>include\shaiya\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\packet_exchange.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="include\shaiya\src\Helpers.cpp">
+      <Filter>include\shaiya\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\CUser.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\SConnectionTBaseReconnect.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\CExchange.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\CClientToDBAgent.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\Helpers.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\network\dbAgent\incoming\0E00.h">
+      <Filter>include\shaiya\include\network\dbAgent\incoming</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\network\dbAgent\outgoing\0E00.h">
+      <Filter>include\shaiya\include\network\dbAgent\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\network\game\incoming\0A00.h">
+      <Filter>include\shaiya\include\network\game\incoming</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\network\game\outgoing\0A00.h">
+      <Filter>include\shaiya\include\network\game\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\network\game\outgoing\2600.h">
+      <Filter>include\shaiya\include\network\game\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\SConnection.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\include\CObject.h">
+      <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\sdev.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
