@@ -12,10 +12,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\common.h" />
-    <ClInclude Include="include\ServerTime.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\ServerTime.cpp" />
+    <ClInclude Include="include\common\DateTime.h" />
+    <ClInclude Include="include\network\dbAgent\incoming\0E00.h" />
+    <ClInclude Include="include\network\dbAgent\outgoing\0E00.h" />
+    <ClInclude Include="include\network\game\incoming\0A00.h" />
+    <ClInclude Include="include\network\game\outgoing\0A00.h" />
+    <ClInclude Include="include\network\game\outgoing\2600.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -29,7 +31,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <PreferredToolArchitecture>
     </PreferredToolArchitecture>
   </PropertyGroup>
@@ -38,7 +40,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
     <PreferredToolArchitecture>
     </PreferredToolArchitecture>
   </PropertyGroup>

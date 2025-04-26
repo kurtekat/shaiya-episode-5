@@ -1,8 +1,6 @@
 #pragma once
 #include <array>
-#define NOMINMAX
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
+#include <cstdint>
 
 // thanks, Cups ^^
 #define CONCAT(x, y) x ## y
@@ -11,9 +9,18 @@
 
 namespace shaiya
 {
+    constexpr int max_equipment_slot = 24;
+    constexpr int max_inventory_slot = 24;
+
+    using bool32_t = uint32_t;
+    using tick32_t = uint32_t;
+    using time32_t = uint32_t;
+
+    using uint = unsigned int;
+
     template<class T, size_t N>
     using Array = std::array<T, N>;
 
     template<size_t N>
-    using CharArray = std::array<char, N>;
+    using String = std::array<char, N>;
 }

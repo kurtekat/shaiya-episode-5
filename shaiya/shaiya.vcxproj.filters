@@ -5,21 +5,52 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="src">
-      <UniqueIdentifier>{841c0f40-1e66-4001-b860-811e30f2ff99}</UniqueIdentifier>
+    <Filter Include="include\common">
+      <UniqueIdentifier>{502be2bb-4e59-4590-a59c-f269ec21ff5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network">
+      <UniqueIdentifier>{b004f9b7-dc8b-40c4-882d-f68a93310bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\game">
+      <UniqueIdentifier>{e54125d6-e879-4323-b546-502e813dd733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\dbAgent">
+      <UniqueIdentifier>{7aca7e0a-c569-4b2e-9ac6-627adf80de85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\game\incoming">
+      <UniqueIdentifier>{0343c740-8d21-440f-84f8-039467d0c7bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\game\outgoing">
+      <UniqueIdentifier>{a05ad147-c55b-40c1-9da7-ad5476d6b663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\dbAgent\incoming">
+      <UniqueIdentifier>{f9b221f2-84a9-42bf-a73c-6f7593cea131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network\dbAgent\outgoing">
+      <UniqueIdentifier>{bba2cf31-63af-435e-9f8b-033ae07d1493}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\common.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="include\ServerTime.h">
-      <Filter>include</Filter>
+    <ClInclude Include="include\common\DateTime.h">
+      <Filter>include\common</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\ServerTime.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
+    <ClInclude Include="include\network\game\incoming\0A00.h">
+      <Filter>include\network\game\incoming</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\game\outgoing\0A00.h">
+      <Filter>include\network\game\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\game\outgoing\2600.h">
+      <Filter>include\network\game\outgoing</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\dbAgent\incoming\0E00.h">
+      <Filter>include\network\dbAgent\incoming</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\dbAgent\outgoing\0E00.h">
+      <Filter>include\network\dbAgent\outgoing</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
