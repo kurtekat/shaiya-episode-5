@@ -4,11 +4,13 @@
 namespace shaiya
 {
     #pragma pack(push, 1)
-    struct DBAgentPointReloadOutgoing
+    struct SVector
     {
-        UINT16 opcode{ 0xE06 };
-        ULONG userId;
-        UINT32 points;
+        float x;
+        float y;
+        float z;
     };
     #pragma pack(pop)
+
+    static_assert(sizeof(SVector) == 0xC);
 }

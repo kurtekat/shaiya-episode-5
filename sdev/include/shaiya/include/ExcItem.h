@@ -1,15 +1,16 @@
 #pragma once
 #include <shaiya/include/common.h>
 
-// CUser::PacketExchange
-
 namespace shaiya
 {
     #pragma pack(push, 1)
-    struct ExchangeConfirmIncoming
+    struct ExcItem
     {
-        UINT16 opcode{ 0xA0A };
-        bool confirmed;
+        uint8_t bag;
+        uint8_t slot;
+        uint8_t count;
     };
     #pragma pack(pop)
+
+    static_assert(sizeof(ExcItem) == 0x3);
 }
