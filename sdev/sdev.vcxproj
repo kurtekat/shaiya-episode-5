@@ -18,6 +18,7 @@
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\packet_shop.cpp" />
+    <ClCompile Include="src\static.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\main.h" />
@@ -51,6 +52,7 @@
     <ClInclude Include="include\shaiya\include\SSyncQueueBufferPriority.h" />
     <ClInclude Include="include\shaiya\include\SSyncQueueBufferSend.h" />
     <ClInclude Include="include\shaiya\include\SVector.h" />
+    <ClInclude Include="include\static.h" />
     <ClInclude Include="resources\resource.h" />
   </ItemGroup>
   <ItemGroup>

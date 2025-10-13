@@ -45,6 +45,9 @@
     <ClCompile Include="include\shaiya\src\NetworkHelper.cpp">
       <Filter>include\shaiya\src</Filter>
     </ClCompile>
+    <ClCompile Include="src\static.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\main.h">
@@ -142,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="include\shaiya\include\SLog.h">
       <Filter>include\shaiya\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\static.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
