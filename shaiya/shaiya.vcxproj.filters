@@ -5,9 +5,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="include\common">
-      <UniqueIdentifier>{502be2bb-4e59-4590-a59c-f269ec21ff5a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="include\network">
       <UniqueIdentifier>{b004f9b7-dc8b-40c4-882d-f68a93310bb5}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
   <ItemGroup>
     <ClInclude Include="include\common.h">
       <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\common\DateTime.h">
-      <Filter>include\common</Filter>
     </ClInclude>
     <ClInclude Include="include\network\game\incoming\0A00.h">
       <Filter>include\network\game\incoming</Filter>

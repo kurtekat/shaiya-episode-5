@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\common.h" />
-    <ClInclude Include="include\common\DateTime.h" />
     <ClInclude Include="include\network\dbAgent\incoming\0E00.h" />
     <ClInclude Include="include\network\dbAgent\outgoing\0E00.h" />
     <ClInclude Include="include\network\game\incoming\0A00.h" />
