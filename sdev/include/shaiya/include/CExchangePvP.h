@@ -1,6 +1,6 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/CExchange.h"
+#include "CExchange.h"
 
 namespace shaiya
 {

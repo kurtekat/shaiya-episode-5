@@ -1,7 +1,7 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/CObjectLink.h"
-#include "include/shaiya/include/SVector.h"
+#include "CObjectLink.h"
+#include "SVector.h"
 
 namespace shaiya
 {

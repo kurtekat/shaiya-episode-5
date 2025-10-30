@@ -2,7 +2,7 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/SNode.h"
+#include "SNode.h"
 
 namespace shaiya
 {

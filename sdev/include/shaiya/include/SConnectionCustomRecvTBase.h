@@ -1,6 +1,6 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/SConnectionCustomRecv.h"
+#include "SConnectionCustomRecv.h"
 
 namespace shaiya
 {

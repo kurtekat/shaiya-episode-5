@@ -1,10 +1,10 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/SConnectionParam.h"
-#include "include/shaiya/include/SInternetAddress.h"
-#include "include/shaiya/include/SNode.h"
-#include "include/shaiya/include/SSyncQueueBuffer.h"
-#include "include/shaiya/include/SSyncQueueBufferSend.h"
+#include "SConnectionParam.h"
+#include "SInternetAddress.h"
+#include "SNode.h"
+#include "SSyncQueueBuffer.h"
+#include "SSyncQueueBufferSend.h"
 
 namespace shaiya
 {

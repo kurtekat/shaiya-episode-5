@@ -1,8 +1,8 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/CExchange.h"
-#include "include/shaiya/include/CExchangePvP.h"
-#include "include/shaiya/include/CObjectConnection.h"
+#include "CExchange.h"
+#include "CExchangePvP.h"
+#include "CObjectConnection.h"
 
 namespace shaiya
 {

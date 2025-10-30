@@ -1,8 +1,8 @@
 #pragma once
 #include <shaiya/include/common.h>
-#include "include/shaiya/include/CObject.h"
-#include "include/shaiya/include/SConnectionCustomRecv.h"
-#include "include/shaiya/include/SSyncQueueBufferPriority.h"
+#include "CObject.h"
+#include "SConnectionCustomRecv.h"
+#include "SSyncQueueBufferPriority.h"
 
 namespace shaiya
 {
