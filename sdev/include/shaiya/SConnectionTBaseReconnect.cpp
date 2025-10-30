@@ -1,4 +1,4 @@
-#include "include/shaiya/include/SConnectionTBaseReconnect.h"
+#include "SConnectionTBaseReconnect.h"
 using namespace shaiya;
 
 void SConnectionTBaseReconnect::Send(SConnection* connection, void* packet, int length)

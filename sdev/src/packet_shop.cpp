@@ -5,9 +5,9 @@
 #include <shaiya/include/network/dbAgent/outgoing/0E00.h>
 #include <shaiya/include/network/game/outgoing/2600.h>
 #include "include/main.h"
-#include "include/static.h"
-#include "include/shaiya/include/CUser.h"
-#include "include/shaiya/include/NetworkHelper.h"
+#include "include/shaiya/CUser.h"
+#include "include/shaiya/NetworkHelper.h"
+#include "include/shaiya/Static.h"
 using namespace shaiya;
 
 namespace packet_shop

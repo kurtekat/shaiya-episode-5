@@ -1,11 +1,11 @@
-#include "include/shaiya/include/CClientToDBAgent.h"
-#include "include/shaiya/include/CClientToGameLog.h"
-#include "include/shaiya/include/CClientToMgr.h"
-#include "include/shaiya/include/CLogConnection.h"
-#include "include/shaiya/include/CUser.h"
-#include "include/shaiya/include/NetworkHelper.h"
-#include "include/shaiya/include/SConnection.h"
-#include "include/shaiya/include/SConnectionTBaseReconnect.h"
+#include "CClientToDBAgent.h"
+#include "CClientToGameLog.h"
+#include "CClientToMgr.h"
+#include "CLogConnection.h"
+#include "CUser.h"
+#include "NetworkHelper.h"
+#include "SConnection.h"
+#include "SConnectionTBaseReconnect.h"
 using namespace shaiya;
 
 void NetworkHelper::Send(CUser* user, void* packet, int length)

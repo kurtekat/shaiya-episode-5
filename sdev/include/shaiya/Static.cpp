@@ -1,6 +1,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
-#include "include/static.h"
+#include "Static.h"
 using namespace shaiya;
 
 void Static::ConvTime(uint time/*eax*/, SYSTEMTIME* output/*ecx*/)

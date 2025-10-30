@@ -1,7 +1,7 @@
 #include <util/util.h>
 #include "include/main.h"
 
-void hook::gui()
+void hook::patch()
 {
     // speed recreation
     util::write_memory((void*)0x4AE1A4, 0x90, 29);

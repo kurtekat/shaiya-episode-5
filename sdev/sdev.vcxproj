@@ -11,48 +11,48 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\shaiya\src\NetworkHelper.cpp" />
-    <ClCompile Include="include\shaiya\src\SConnection.cpp" />
-    <ClCompile Include="include\shaiya\src\SConnectionTBaseReconnect.cpp" />
+    <ClCompile Include="include\shaiya\NetworkHelper.cpp" />
+    <ClCompile Include="include\shaiya\SConnection.cpp" />
+    <ClCompile Include="include\shaiya\SConnectionTBaseReconnect.cpp" />
+    <ClCompile Include="include\shaiya\Static.cpp" />
     <ClCompile Include="src\packet_exchange.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\packet_shop.cpp" />
-    <ClCompile Include="src\static.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\main.h" />
-    <ClInclude Include="include\shaiya\include\CClientToDBAgent.h" />
-    <ClInclude Include="include\shaiya\include\CClientToGameLog.h" />
-    <ClInclude Include="include\shaiya\include\CClientToMgr.h" />
-    <ClInclude Include="include\shaiya\include\CExchange.h" />
-    <ClInclude Include="include\shaiya\include\CExchangePvP.h" />
-    <ClInclude Include="include\shaiya\include\CLogConnection.h" />
-    <ClInclude Include="include\shaiya\include\CObject.h" />
-    <ClInclude Include="include\shaiya\include\CObjectConnection.h" />
-    <ClInclude Include="include\shaiya\include\CObjectLink.h" />
-    <ClInclude Include="include\shaiya\include\CUser.h" />
-    <ClInclude Include="include\shaiya\include\ExcItem.h" />
-    <ClInclude Include="include\shaiya\include\NetworkHelper.h" />
-    <ClInclude Include="include\shaiya\include\SConnection.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionCustomRecv.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionCustomRecvTBase.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionParam.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionTBase.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionTBaseReconnect.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionTServer.h" />
-    <ClInclude Include="include\shaiya\include\SConnectionTServerReconnect.h" />
-    <ClInclude Include="include\shaiya\include\SInternetAddress.h" />
-    <ClInclude Include="include\shaiya\include\SLog.h" />
-    <ClInclude Include="include\shaiya\include\SNode.h" />
-    <ClInclude Include="include\shaiya\include\SPacketBufferSend.h" />
-    <ClInclude Include="include\shaiya\include\SQueuePrioritySendNode.h" />
-    <ClInclude Include="include\shaiya\include\SQueueSendNode.h" />
-    <ClInclude Include="include\shaiya\include\SSyncQueueBuffer.h" />
-    <ClInclude Include="include\shaiya\include\SSyncQueueBufferPriority.h" />
-    <ClInclude Include="include\shaiya\include\SSyncQueueBufferSend.h" />
-    <ClInclude Include="include\shaiya\include\SVector.h" />
-    <ClInclude Include="include\static.h" />
+    <ClInclude Include="include\shaiya\CClientToDBAgent.h" />
+    <ClInclude Include="include\shaiya\CClientToGameLog.h" />
+    <ClInclude Include="include\shaiya\CClientToMgr.h" />
+    <ClInclude Include="include\shaiya\CExchange.h" />
+    <ClInclude Include="include\shaiya\CExchangePvP.h" />
+    <ClInclude Include="include\shaiya\CLogConnection.h" />
+    <ClInclude Include="include\shaiya\CObject.h" />
+    <ClInclude Include="include\shaiya\CObjectConnection.h" />
+    <ClInclude Include="include\shaiya\CObjectLink.h" />
+    <ClInclude Include="include\shaiya\CUser.h" />
+    <ClInclude Include="include\shaiya\ExcItem.h" />
+    <ClInclude Include="include\shaiya\NetworkHelper.h" />
+    <ClInclude Include="include\shaiya\SConnection.h" />
+    <ClInclude Include="include\shaiya\SConnectionCustomRecv.h" />
+    <ClInclude Include="include\shaiya\SConnectionCustomRecvTBase.h" />
+    <ClInclude Include="include\shaiya\SConnectionParam.h" />
+    <ClInclude Include="include\shaiya\SConnectionTBase.h" />
+    <ClInclude Include="include\shaiya\SConnectionTBaseReconnect.h" />
+    <ClInclude Include="include\shaiya\SConnectionTServer.h" />
+    <ClInclude Include="include\shaiya\SConnectionTServerReconnect.h" />
+    <ClInclude Include="include\shaiya\SInternetAddress.h" />
+    <ClInclude Include="include\shaiya\SLog.h" />
+    <ClInclude Include="include\shaiya\SNode.h" />
+    <ClInclude Include="include\shaiya\SPacketBufferSend.h" />
+    <ClInclude Include="include\shaiya\SQueuePrioritySendNode.h" />
+    <ClInclude Include="include\shaiya\SQueueSendNode.h" />
+    <ClInclude Include="include\shaiya\SSyncQueueBuffer.h" />
+    <ClInclude Include="include\shaiya\SSyncQueueBufferPriority.h" />
+    <ClInclude Include="include\shaiya\SSyncQueueBufferSend.h" />
+    <ClInclude Include="include\shaiya\Static.h" />
+    <ClInclude Include="include\shaiya\SVector.h" />
     <ClInclude Include="resources\resource.h" />
   </ItemGroup>
   <ItemGroup>
