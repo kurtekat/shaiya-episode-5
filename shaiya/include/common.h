@@ -1,5 +1,6 @@
 #pragma once
 #include <array>
+#include <cstddef>
 #include <cstdint>
 
 // thanks, Cups ^^
@@ -12,8 +13,6 @@ namespace shaiya
     using bool32_t = uint32_t;
     using tick32_t = uint32_t;
     using time32_t = uint32_t;
-
-    using uint = unsigned int;
 
     template<class T, size_t N>
     using Array = std::array<T, N>;
