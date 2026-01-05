@@ -30,7 +30,7 @@
     <ClCompile Include="src\packet_exchange.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="include\shaiya\NetworkHelper.cpp">
+    <ClCompile Include="include\shaiya\Network.cpp">
       <Filter>include\shaiya</Filter>
     </ClCompile>
     <ClCompile Include="include\shaiya\SConnection.cpp">
@@ -83,7 +83,7 @@
     <ClInclude Include="include\shaiya\ExcItem.h">
       <Filter>include\shaiya</Filter>
     </ClInclude>
-    <ClInclude Include="include\shaiya\NetworkHelper.h">
+    <ClInclude Include="include\shaiya\Network.h">
       <Filter>include\shaiya</Filter>
     </ClInclude>
     <ClInclude Include="include\shaiya\SConnection.h">

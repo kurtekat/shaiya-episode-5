@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\shaiya\NetworkHelper.cpp" />
+    <ClCompile Include="include\shaiya\Network.cpp" />
     <ClCompile Include="include\shaiya\SConnection.cpp" />
     <ClCompile Include="include\shaiya\SConnectionTBaseReconnect.cpp" />
     <ClCompile Include="include\shaiya\Static.cpp" />
@@ -33,7 +33,7 @@
     <ClInclude Include="include\shaiya\CObjectLink.h" />
     <ClInclude Include="include\shaiya\CUser.h" />
     <ClInclude Include="include\shaiya\ExcItem.h" />
-    <ClInclude Include="include\shaiya\NetworkHelper.h" />
+    <ClInclude Include="include\shaiya\Network.h" />
     <ClInclude Include="include\shaiya\SConnection.h" />
     <ClInclude Include="include\shaiya\SConnectionCustomRecv.h" />
     <ClInclude Include="include\shaiya\SConnectionCustomRecvTBase.h" />
