@@ -42,6 +42,9 @@
     <ClCompile Include="include\shaiya\Static.cpp">
       <Filter>include\shaiya</Filter>
     </ClCompile>
+    <ClCompile Include="include\shaiya\CUser.cpp">
+      <Filter>include\shaiya</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\main.h">
@@ -141,6 +144,9 @@
       <Filter>include\shaiya</Filter>
     </ClInclude>
     <ClInclude Include="include\shaiya\SVector.h">
+      <Filter>include\shaiya</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shaiya\MyShop.h">
       <Filter>include\shaiya</Filter>
     </ClInclude>
   </ItemGroup>
