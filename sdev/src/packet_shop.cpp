@@ -12,60 +12,58 @@
 #include "include/shaiya/Static.h"
 using namespace shaiya;
 
-namespace packet_shop
+/// <summary>
+/// Sends packet 0xE06 to the dbAgent service.
+/// </summary>
+void hook_0x47A4A4(CUser* user)
 {
-    /// <summary>
-    /// Sends packet 0xE06 to the dbAgent service.
-    /// </summary>
-    void send_dbAgent_0xE06(CUser* user)
-    {
-        DBAgentPointReloadIncoming outgoing{};
-        outgoing.billingId = user->billingId;
-        Network::SendDBAgent(&outgoing, sizeof(DBAgentPointReloadIncoming));
-    }
+    DBAgentPointReloadIncoming outgoing{};
+    outgoing.billingId = user->billingId;
+    Network::SendDBAgent(&outgoing, sizeof(DBAgentPointReloadIncoming));
+}
 
-    /// <summary>
-    /// Sends packets 0xE0A and 0xE06 to the dbAgent service.
-    /// </summary>
-    void send_dbAgent_0xE0A(CUser* user)
-    {
-        DBAgentPointUpdateIncoming outgoing{};
-        outgoing.billingId = user->billingId;
-        Network::SendDBAgent(&outgoing, sizeof(DBAgentPointUpdateIncoming));
-        send_dbAgent_0xE06(user);
-        InterlockedExchange(&user->pointsLock, 0);
-    }
+/// <summary>
+/// Sends packets 0xE0A and 0xE06 to the dbAgent service.
+/// </summary>
+void hook_0x48876F(CUser* user)
+{
+    DBAgentPointUpdateIncoming outgoing{};
+    outgoing.billingId = user->billingId;
+    Network::SendDBAgent(&outgoing, sizeof(DBAgentPointUpdateIncoming));
 
-    /// <summary>
-    /// Sends packet 0xE03 to the dbAgent service.
-    /// </summary>
-    void send_dbAgent_0xE03(CUser* user, SessionMgrPreBuyProductIncoming* packet)
-    {
-        DBAgentPointItemGiftSendIncoming outgoing{};
-        outgoing.billingId = user->billingId;
-        outgoing.targetName = packet->targetName;
-        outgoing.productCode = packet->productCode;
-        outgoing.purchasePoints = packet->purchasePoints;
-        outgoing.purchaseDate = Static::GetSystemTime();
-        outgoing.purchaseNumber = InterlockedIncrement(reinterpret_cast<volatile unsigned*>(0x5879B0));
-        Network::SendDBAgent(&outgoing, sizeof(DBAgentPointItemGiftSendIncoming));
-        InterlockedExchange(&user->pointsLock, 0);
-    }
+    hook_0x47A4A4(user);
+    InterlockedExchange(&user->pointsLock, 0);
+}
 
-    /// <summary>
-    /// Handles incoming 0xE06 packets.
-    /// </summary>
-    void handler_0xE06(CUser* user, DBAgentPointReloadOutgoing* incoming)
-    {
-        if (InterlockedCompareExchange(&user->pointsLock, 0, 0))
-            return;
+/// <summary>
+/// Sends packet 0xE03 to the dbAgent service.
+/// </summary>
+void hook_0x488A80(CUser* user, SessionMgrPreBuyProductIncoming* packet)
+{
+    DBAgentPointItemGiftSendIncoming outgoing{};
+    outgoing.billingId = user->billingId;
+    outgoing.targetName = packet->targetName;
+    outgoing.productCode = packet->productCode;
+    outgoing.purchasePoints = packet->purchasePoints;
+    outgoing.purchaseDate = Static::GetSystemTime();
+    outgoing.purchaseNumber = InterlockedIncrement(reinterpret_cast<volatile unsigned*>(0x5879B0));
+    Network::SendDBAgent(&outgoing, sizeof(DBAgentPointItemGiftSendIncoming));
+    InterlockedExchange(&user->pointsLock, 0);
+}
 
-        InterlockedExchange(&user->points, incoming->points);
+/// <summary>
+/// Handles incoming 0xE06 packets.
+/// </summary>
+void handler_0xE06(CUser* user, DBAgentPointReloadOutgoing* incoming)
+{
+    if (InterlockedCompareExchange(&user->pointsLock, 0, 0))
+        return;
 
-        GamePointOutgoing outgoing{};
-        outgoing.points = user->points;
-        SConnection::Send(user, &outgoing, sizeof(GamePointOutgoing));
-    }
+    InterlockedExchange(&user->points, incoming->points);
+
+    GamePointOutgoing outgoing{};
+    outgoing.points = user->points;
+    SConnection::Send(user, &outgoing, sizeof(GamePointOutgoing));
 }
 
 unsigned u0x4ED2D0 = 0x4ED2D0;
@@ -80,7 +78,7 @@ void __declspec(naked) naked_0x47A4A4()
         pushad
 
         push esi // user
-        call packet_shop::send_dbAgent_0xE06
+        call hook_0x47A4A4
         add esp,0x4
 
         popad
@@ -97,7 +95,7 @@ void __declspec(naked) naked_0x48876F()
         pushad
 
         push edi // user
-        call packet_shop::send_dbAgent_0xE0A
+        call hook_0x48876F
         add esp,0x4
 
         popad
@@ -116,7 +114,7 @@ void __declspec(naked) naked_0x488A80()
         lea eax,[esp+0x124]
         push eax // packet
         push edi // user
-        call packet_shop::send_dbAgent_0xE03
+        call hook_0x488A80
         add esp,0x8
 
         popad
@@ -140,7 +138,7 @@ void __declspec(naked) naked_0x47D525()
 
         push esi // packet
         push ebx // user
-        call packet_shop::handler_0xE06
+        call handler_0xE06
         add esp,0x8
 
         popad
